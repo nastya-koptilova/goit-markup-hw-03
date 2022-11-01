@@ -37,6 +37,12 @@ ul {
 
 .container {
     width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -45,10 +51,32 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     color: var(--main-text-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .header__logo-span {
     color: var(--object-active-color);
+}
+
+.header__nav-list, .header__contacts-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-items, .header__contacts-items {
+    margin-right: 50px;
+}
+
+.header__nav-items:last-child, .header__contacts-items:last-child {
+    margin-right: 0;
+}
+
+.header__nav-list {
+    margin-right: 344px;
 }
 
 .header__nav-link {
@@ -72,6 +100,11 @@ ul {
 
 .header__nav-items .current {
     color: var(--object-active-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .banner {
