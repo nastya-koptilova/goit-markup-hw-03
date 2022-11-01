@@ -24,6 +24,15 @@ body {
 
 .list {
     list-style: none;
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+.container {
+    width: 1200px;
 }
 
 .header__logo {
