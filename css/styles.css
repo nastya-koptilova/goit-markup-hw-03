@@ -1,0 +1,217 @@
+:root {
+    --main-background-color: #FFFFFF;
+    --main-text-color: #212121;
+    --text-description-color: #757575;
+    --object-active-color: #2196F3;
+    --accent-background-color: #F5F4FA;
+    --footer-background-color: #2F303A;
+    --main-font-family: 'Roboto', sans-serif;
+    --logo-font-family: 'Raleway';
+    --button-active-color: #188CE8;
+}
+
+body {
+    background: var(--main-background-color);
+    font-family: var(--main-font-family);
+    color: var(--main-text-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.header__logo {
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--main-text-color);
+}
+
+.header__logo-span {
+    color: var(--object-active-color);
+}
+
+.header__nav-link {
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header__contacts {
+    color: var(--text-description-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header__nav-link:hover, .header__contacts:hover, .header__nav-link:focus,
+.header__contacts:focus {
+    color: var(--object-active-color);
+}
+
+.header__nav-items .current {
+    color: var(--object-active-color);
+}
+
+.banner {
+    background: var(--footer-background-color);
+}
+
+.banner__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-background-color);
+    text-transform: uppercase;
+}
+
+.banner__btn {
+    background: var(--object-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: var(--main-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner__btn:active {
+    background: var(--button-active-color);
+}
+
+.benefits__title {
+    display: none;
+}
+
+.benefits__list-title {
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.benefits__list-description {
+    line-height: 1.71;
+    color: var(--text-description-color);
+}
+
+.we-do__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team {
+    background: var(--accent-background-color);
+}
+
+.team__items {
+    background: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border: none;
+}
+
+.team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team__list-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__list-description {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--text-description-color);
+}
+
+.footer {
+    background: var(--footer-background-color);
+}
+
+.footer__logo {
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--main-background-color);
+}
+
+.footer__logo-span {
+    color: var(--object-active-color);
+}
+
+.footer__contacts {
+    line-height: 1.71;
+    font-style: normal;
+    color: var(--main-background-color);
+}
+
+.footer__contacts-link {
+    color: var(--text-description-color);
+}
+
+.footer__contacts-link:hover,
+.footer__contacts-link:focus {
+    color: var(--main-background-color);
+}
+
+.portfolio__title {
+    display: none;
+}
+
+.portfolio__filter-btn {
+    height: 38px;
+    background: var(--accent-background-color);
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--main-font-family);
+    color: var(--main-text-color);
+}
+
+.portfolio__filter-btn:hover, .portfolio__filter-btn:focus {
+    background: var(--object-active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--main-background-color);
+}
+
+.portfolio__card {
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio__card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio__card-description {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-description-color);
+}
