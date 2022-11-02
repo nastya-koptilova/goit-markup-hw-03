@@ -8,6 +8,7 @@
     --main-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway';
     --button-active-color: #188CE8;
+    --header-border-color: #ECECEC;
 }
 
 body {
@@ -101,6 +102,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header__nav-items .current {
     color: var(--object-active-color);
+}
+
+header::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .section {
@@ -278,6 +285,16 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
 }
 
+.portfolio__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.portfolio__filter-items {
+    margin-right: 8px;
+}
+
 .portfolio__filter-btn {
     height: 38px;
     background: var(--accent-background-color);
@@ -290,12 +307,27 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
     font-family: var(--main-font-family);
     color: var(--main-text-color);
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.portfolio__filter-items:last-child {
+    margin-right: 0;
 }
 
 .portfolio__filter-btn:hover, .portfolio__filter-btn:focus {
     background: var(--object-active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--main-background-color);
+}
+
+.portfolio__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
 }
 
 .portfolio__card {
@@ -307,10 +339,13 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding: 20px 24px 4px 24px;
+
 }
 
 .portfolio__card-description {
     font-size: 16px;
     line-height: 1.88;
     color: var(--text-description-color);
+    padding: 0px 24px 20px 24px;
 }
