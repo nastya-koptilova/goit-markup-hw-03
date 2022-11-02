@@ -119,6 +119,8 @@ ul {
     letter-spacing: 0.06em;
     color: var(--main-background-color);
     text-transform: uppercase;
+    padding-top: 200px;
+    padding-bottom: 30px;
 }
 
 .banner__btn {
@@ -133,6 +135,14 @@ ul {
     letter-spacing: 0.06em;
     text-align: center;
     cursor: pointer;
+    width: 216px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+.banner__btn-container {
+    padding-bottom: 200px;
 }
 
 .banner__btn:active {
@@ -143,9 +153,23 @@ ul {
     display: none;
 }
 
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__items {
+    margin-right: 30px;
+}
+
+.benefits__items:last-child {
+    margin-right: 0;
+}
+
 .benefits__list-title {
     font-weight: 700;
     line-height: 1.14;
+    padding-bottom: 10px;
 }
 
 .benefits__list-description {
