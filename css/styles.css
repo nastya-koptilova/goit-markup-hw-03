@@ -10,10 +10,6 @@
     --button-active-color: #188CE8;
 }
 
-* {
-    margin: 0;
-}
-
 body {
     background: var(--main-background-color);
     font-family: var(--main-font-family);
@@ -33,6 +29,11 @@ body {
 
 ul {
     padding-left: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 .container {
@@ -149,6 +150,10 @@ ul {
     background: var(--button-active-color);
 }
 
+.benefits {
+    padding-bottom: 0px;
+}
+
 .benefits__title {
     display: none;
 }
@@ -225,6 +230,8 @@ ul {
 
 .footer {
     background: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer__logo {
@@ -243,6 +250,19 @@ ul {
     line-height: 1.71;
     font-style: normal;
     color: var(--main-background-color);
+    margin-top: 20px;
+}
+
+.footer__contacts-address {
+    margin-bottom: 9px;
+}
+
+.footer__contacts-items {
+    padding-bottom: 9px;
+}
+
+.footer__contacts-items:last-child {
+    padding-bottom: 0;
 }
 
 .footer__contacts-link {
