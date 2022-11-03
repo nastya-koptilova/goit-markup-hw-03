@@ -62,7 +62,6 @@ p {
   color: var(--main-text-color);
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
 }
 
 .header__logo-span {
@@ -71,10 +70,7 @@ p {
 
 .header__nav-list,
 .header__contacts-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
-  justify-content: space-between;
 }
 
 .header__nav-items,
@@ -88,7 +84,14 @@ p {
 }
 
 .header__nav-list {
-  margin-right: 344px;
+  margin-left: auto;
+}
+
+.header__nav-link,
+.header__contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
 }
 
 .header__nav-link {
@@ -129,6 +132,8 @@ header::after {
 
 .banner {
   background: var(--footer-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .banner__title {
@@ -139,8 +144,7 @@ header::after {
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .banner__btn {
@@ -159,10 +163,6 @@ header::after {
   height: 50px;
   margin: 0 auto;
   display: block;
-}
-
-.banner__btn-container {
-  padding-bottom: 200px;
 }
 
 .banner__btn:active {
@@ -191,9 +191,10 @@ header::after {
 }
 
 .benefits__list-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .benefits__list-description {
@@ -214,6 +215,12 @@ header::after {
   justify-content: space-between;
 }
 
+.we-do__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .team {
   background: var(--accent-background-color);
 }
@@ -221,6 +228,11 @@ header::after {
 .team__list {
   display: flex;
   justify-content: space-between;
+}
+
+.team__items-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team__items {
@@ -235,8 +247,7 @@ header::after {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team__list-description {
@@ -244,7 +255,6 @@ header::after {
   line-height: 1.19;
   text-align: center;
   color: var(--text-description-color);
-  padding-bottom: 30px;
 }
 
 .footer {
@@ -277,11 +287,11 @@ header::after {
 }
 
 .footer__contacts-items {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer__contacts-items:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer__contacts-link {
@@ -341,7 +351,8 @@ header::after {
   justify-items: center;
 }
 
-.portfolio__card {
+.portfolio__card-container {
+  padding: 20px 24px 20px 24px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -350,12 +361,11 @@ header::after {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 
 .portfolio__card-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-description-color);
-  padding: 0px 24px 20px 24px;
 }
