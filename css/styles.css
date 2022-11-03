@@ -17,6 +17,7 @@ body {
   color: var(--main-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .link {
